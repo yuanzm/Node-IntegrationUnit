@@ -43,7 +43,7 @@ function read(fileName){
 
 //get request obj and form
 
-function common(params , read , doc) {
+function common(params , read , doc ) {
 
   var accessToken =  read.data.accessToken;
   var userId = read.data.id;
@@ -53,10 +53,22 @@ function common(params , read , doc) {
       userId : userId
   };
 
-  var info = {
-      url : url.getUrl(params)
-  }
+  if(doc.method === 'post'){
 
+    var info = {
+      url : url.postUrl(doc.url),
+      form : params
+    };
+
+  }else if(doc.method === 'get'){
+
+    params.childpath = doc.url;
+
+    console.log(params);
+    var info = {
+        url : url.getUrl(params)
+    }
+  }
   return {
     info : info,
     token : token

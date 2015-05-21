@@ -9,12 +9,11 @@ var getNewName = function*(){
   for(var i in doc.test){
 
     var params = {
-        childpath: 'user/getNewName',
         userId: read.data.id,
         changeType: doc.test[i].req.changeType,
     };
 
-    var Obj =  user.common(params, read, doc);
+    var Obj =  user.common(params, read, doc );
 
     var result = yield request.Get(Obj); //Get is promise
 
