@@ -1,27 +1,15 @@
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO register : id type equal response id type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO register : userName type equal response userName type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO register : verification is in array
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO register : verification type equal response verification type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO register : schoolAlias type equal response schoolAlias type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO register : switchs type is json
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO ......Current Child Object : topicType type equal response topicType type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO ......Current Child Object : openSink type equal response openSink type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO ......Current Child Object : strategy type equal response strategy type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO register : names type is json
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO ......Current Child Object : subNames type equal response subNames type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO ......Current Child Object : mainName type equal response mainName type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO ......Current Child Object : mayMainName type equal response mayMainName type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO register : school type equal response school type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO register : score type equal response score type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO mayChange : canChange type equal response canChange type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO mayChange : canChangeHint type equal response canChangeHint type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO mayChange : score type equal response score type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO mayChange :  score value equal res
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO mayChange1 : canChange type equal response canChange type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO mayChange1 : canChangeHint type equal response canChangeHint type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO mayChange1 : score type equal response score type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO mayChange1 :  score value equal res
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO getNewName : score type equal response score type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO getNewName : newName type equal response newName type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO getNewName1 : score type equal response score type
-[Thu May 21 2015 10:15:33 GMT+0800 (CST)] INFO getNewName1 : newName type equal response newName type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO register : id type equal response id type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO register : userName type equal response userName type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO register : verification is in array
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO register : verification type equal response verification type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO register : schoolAlias type equal response schoolAlias type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO register : switchs type is json
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO ......Current Child Object : topicType type equal response topicType type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO ......Current Child Object : openSink type equal response openSink type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO ......Current Child Object : strategy type equal response strategy type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO register : names type is json
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO ......Current Child Object : subNames type equal response subNames type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO ......Current Child Object : mainName type equal response mainName type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO ......Current Child Object : mayMainName type equal response mayMainName type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO register : school type equal response school type
+[Tue May 26 2015 11:28:59 GMT+0800 (CST)] INFO register : score type equal response score type

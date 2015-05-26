@@ -1,7 +1,10 @@
 var request = require('request');
 var md5 = require('md5');
 
-var r = request.defaults({'proxy':'http://192.168.1.103:8888'});
+
+// var r = request.defaults({'proxy':'http://192.168.1.103:8888'});
+
+var r = request;
 
 //when module is post request ,use post
 // options

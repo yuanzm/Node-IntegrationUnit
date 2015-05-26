@@ -64,7 +64,7 @@ function common(params , read , doc ) {
 
     params.childpath = doc.url;
 
-    console.log(params);
+    // console.log(params);
     var info = {
         url : url.getUrl(params)
     }

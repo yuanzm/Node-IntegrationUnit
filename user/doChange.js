@@ -10,7 +10,7 @@ var doChange = function*(){
   for(var i in doc.test){
 
     var params = {
-      userId: read.data.userId,
+      userId: read.data.id,
       oldName: read.data.userName,
       newName: '某人的新名字',
       isChange: doc.test[i].req.isChange

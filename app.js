@@ -1,3 +1,4 @@
+'use strict';
 var co = require('co');
 var colors = require('colors'); //global
 var user = require('./user');
@@ -87,6 +88,8 @@ function onerror(err) {
 
 
 app.listen(4000);
+
+console.log('..................[nodemon] starting  '.green+'localhost at 4000'.red);
 
 // co(user_register).then(function(data){
 // 		console.log(data);
