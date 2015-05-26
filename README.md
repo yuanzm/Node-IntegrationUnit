@@ -1,6 +1,8 @@
 ## 准备
 
 ```js
+npm install & npm update
+
 npm install iojs  nodemon -g
 ```
 
