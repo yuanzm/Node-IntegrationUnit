@@ -1,0 +1,20 @@
+method: post
+url: post/comment
+test:
+  comment:
+    name: comment
+    req:
+        userName: 树洞君
+        content:
+            text: dfdfdaf
+    dependence:
+        method: post
+        url: post/save
+        params:
+          postId: id
+    res:
+      rs:
+      data:
+          id:
+            type: string
+      error:

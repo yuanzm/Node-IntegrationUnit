@@ -1,15 +1,1 @@
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO register : id type equal response id type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO register : userName type equal response userName type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO register : verification is in array
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO register : verification type equal response verification type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO register : schoolAlias type equal response schoolAlias type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO register : switchs type is json
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO ......Current Child Object : topicType type equal response topicType type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO ......Current Child Object : openSink type equal response openSink type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO ......Current Child Object : strategy type equal response strategy type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO register : names type is json
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO ......Current Child Object : subNames type equal response subNames type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO ......Current Child Object : mainName type equal response mainName type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO ......Current Child Object : mayMainName type equal response mayMainName type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO register : school type equal response school type
-[Tue Jun 02 2015 20:04:38 GMT+0800 (CST)] INFO register : score type equal response score type
+[Fri Jun 05 2015 20:49:44 GMT+0800 (CST)] INFO comment : id type equal response id type

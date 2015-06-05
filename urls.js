@@ -32,7 +32,7 @@ function getUrl(path){ //notice !! path must be
 	var Obj = {
 		protocol : protocol,
 		host: host,
-		pathname: 'treehole/'+childpath,
+		pathname: 'treehole/v2/'+childpath,
 		search: '?'+total
 	}
 
@@ -45,7 +45,7 @@ function postUrl(path){
 	var Obj = {
 		protocol : protocol,
 		host: host,
-		pathname: 'treehole/'+path
+		pathname: 'treehole/v2/'+path
 	}
 
 	return url.format(Obj);

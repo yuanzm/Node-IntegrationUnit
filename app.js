@@ -1,52 +1,40 @@
 'use strict';
 var co = require('co');
 var colors = require('colors'); //global
-var user = require('./user');
+var fs = require('fs');
 var express = require('express');
 var app = express();
-var router = express.Router();
+var router = express.Router(); // express 4x add Router
 
-var user_register = require('./userRegister');
+var userRegister = require('./userRegister');
 
 var doUnit = require('./doUnit');
 
-
-co(function*(){
-
-	var register = yield co(user_register);
-
-	router.get('/:dir/:file',function(req,res){
+router.get('/v2/:dir/:file',function(req,res){
 				// res.send(unescape(result[req.name]));
 				var pathname = __dirname + '/doc/'+req.params.dir+'/'+req.params.file+'.yml';
+				// console.log(pathname);
 
-				console.log(pathname);
+				fs.exists(pathname,function(result){
+						//result type bool
+							if (!!!result) {
+									res.send('路由错误或测试用例不存在');
+							}
 
-				//通过路由读取yml用例
-				var result = co(doTest(pathname)).then(function(data){
+				});  
+				var result = co(function*(){
 
-						console.log(data);
-						//将结果返回
-						res.send(data);
-				});
-	})
+						if (req.params.file === 'register') {
+							var register = yield co(userRegister);
+						}
 
-	app.use('/',router);
+						var result = yield co(doUnit(pathname));
 
-	console.log('register: '.green + register);
-	// console.log('mayChange: '.green + mayChange);
-	// console.log('getNewName: '.green + getNewName);
-	// console.log('doChange: '.green + doChange);
-	// console.log('verify: '.green + verify);
+						res.send(unescape(result));
+				}).catch(onerror);
+})
 
-}).catch(onerror);
-
-
-function jsonToObj(data){
-	var result;
-
-	if(!(result=JSON.parse(data)))console.error('can not instance json');
-	return result;
-}
+app.use('/',router);
 
 function onerror(err) {
   // log any uncaught errors
@@ -55,26 +43,7 @@ function onerror(err) {
   console.error(err.stack);
 }
 
-app.listen(4000);
-
-console.log('..................[listen] starting  '.green+'localhost at 4000'.red);
-
-// co(user_register).then(function(data){
-// 		console.log(data);
-// 		user.write(data);
-// 		co(user_mayChange).then(function(data){
-// 				console.log(data);
-// 		})
-// });
-//
-
-
-
-// co(user_register).then(function(data){
-// 		var userID = JSON.parse(data).data.id;
-// 		console.log(userID);
-// 		user.setID(userID);
-// 	//	console.log(user);
-// });
-
-//console.log(user);
+app.set('port', process.env.PORT || 4000 );
+app.listen(app.get('port'),function(){
+	console.log('..................[listen] starting  '.green+'localhost at '.red+app.get('port'));
+});

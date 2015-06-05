@@ -2,24 +2,24 @@ var request = require('request');
 var md5 = require('md5');
 
 
-// var r = request.defaults({'proxy':'http://192.168.1.103:8888'});
+var r = request.defaults({'proxy':'http://192.168.1.13:8888'});
 
-var r = request;
+// var r = request;
 
 //when module is post request ,use post
 // options
-var Post = function(postObj , common){
+var Post = function(e){
 	return new Promise(function(resolve, reject){
 
-		var headers = getHeaders(common);
-
+		var headers = getHeaders(e.token);
+		console.log(e);
 		var obj = {
-			url : postObj.url,
-			form : postObj.form,
+			url : e.info.url,
+			form : e.info.form,
 			headers : headers
 		}
 		r.post(obj,function(err,response,body){
-			if(err) reject(err);
+			// if(err) reject(err);
 			resolve(body);
 		})
 	})

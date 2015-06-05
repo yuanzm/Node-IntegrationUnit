@@ -43,6 +43,7 @@ function read(fileName){
 }
 
 //get request obj and form
+// 每个请求都必须有accessToken , 把register用户持久化
 
 function common(params , read , doc ) {
 
@@ -53,6 +54,8 @@ function common(params , read , doc ) {
       accessToken : accessToken,
       userId : userId
   };
+
+  params['userId'] = userId;
 
   if(doc.method === 'post'){
 
@@ -80,7 +83,11 @@ function compare(res,doc){
 
   // console.log(register.res , JSON.parse(result).data);
 
-  var res = typeof res !== 'object' ? JSON.parse(res).data : res;
+  try {
+    var res = typeof res !== 'object' ? JSON.parse(res).data : res;
+  } catch (e) {
+      console.log('返回类型匹配失败 error at func:compare');
+  }
 
   //测试文件名
   var name;
@@ -135,14 +142,12 @@ function compare(res,doc){
               log.error(name +' : '+ key2 + ' type error');
             }
 
-
         }
 
         //如果这里想要改成object ,那还需要加一个判断条件否则doc[key2].value无值
         if(doc[key2].type === 'json'){
 
             //递归
-            // console.log('has object');
             compare(res[key1],doc[key2].value);
         }
       }
