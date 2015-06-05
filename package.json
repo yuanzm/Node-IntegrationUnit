@@ -1,0 +1,26 @@
+{
+    "name": "unit",
+    "version": "1.0.0",
+    "description": "treehole unit",
+    "main": "user_register.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "keywords": [
+       "treehole_unit"
+    ],
+    "author": "lluvio",
+    "license": "ISC",
+    "devDependencies": {
+        "eventproxy": "0.3.1",
+        "MD5": "^1.2.1",
+        "async": "^0.9.0",
+        "colors": "^1.1.0",
+        "express": "^4.12.4",
+        "js-yaml": "^3.3.1",
+        "log": "^1.4.0",
+        "grunt-nodemon": "*",
+        "request": "^2.55.0"
+    }
+}

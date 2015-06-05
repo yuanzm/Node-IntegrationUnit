@@ -1,0 +1,48 @@
+method: post
+url : user/register
+test:
+  register:
+    name: register
+    req :
+      deviceId: 4123123214  # M 设备唯一标识,只能动态生成
+      cid : weixin   # O
+      osType: 0 # M ,  0 android, 1 ios
+      longitude: 30.666 # M
+      latitude: 120.000 # M
+      school:
+      address:
+    res:
+      rc:
+      data:
+        id:
+          type: string
+        userName:
+          type: string
+        verification:
+          type: number
+          value: [0,1,2]
+        score:
+          type: number
+        school:
+          type: string
+        schoolAlias:
+          type: string
+        names:
+          type: json  #json
+          value:
+            mainName:
+              type: object # array is object
+            mayMainName:
+              type: string
+            subNames:
+              type: object # null => object
+        switchs:
+          type: json
+          value:
+            strategy:
+              type: number
+            openSink:
+              type: number
+            topicType:
+              type: number
+      error:
