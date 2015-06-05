@@ -39,9 +39,9 @@ test:
   comment:
     name: comment
     req:
-        userName: 树洞君
+        userName: hello
         content:
-            text: dfdfdaf
+            text: world
     dependence:
         method: post
         url: post/save
@@ -78,6 +78,6 @@ http://localhost:4000/v2/post/comment
 //if u want to use proxy(charles),  uncomment the request.js
 // var r = request.defaults({'proxy':'http://192.168.1.103:8888'});
 
-//then  delete the line 
+//then  delete the line
 var r = request;
 ```
